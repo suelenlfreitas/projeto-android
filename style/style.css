@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'Android', cursive;
+    src: url('..fontes/idoid.otf') format('opentype');
+    font-weight: normal;
+   }
+
+   /*O Site estava funcionando bem, o que não funcionou foi os degradês, as imagens que trocam de acordo com o dispositivo. Mas conforme fui revisando o código foi dando erro e ficou do jeito que está agora. Terei que reiniciar tudo com um novo projeto do zero.*/
+
+:root{
+    --cor0: #9F22F0;
+    --cor1: #6E28F7;
+    --cor2: #3A2FE0;
+    --cor3: #2851F7;
+    --cor4: #2682ED;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: font-family: 'Bebas Neue', cursive;
+    --fonte-android:'Android', cursive;
+}
+
+body{
+ font-family: var(--fonte-padrao);  
+ background-color: rgb(218, 250, 239);
+ margin: 0;
+ padding: 0;
+}
+
+header{
+    background-color: #204268;
+    background-image: linear-gradient(to right #9F22F0 #3A2FE0 #2682ED);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px
+    }
+
+header > h1{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+}
+    nav{
+        background-color: #204268;
+        color: white;
+        padding: 5px;
+        text-align: left;
+    }
+    nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+    }
+main{
+        background-color: white;
+        margin: 60px;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 5px;
+        padding: 3px;
+        text-align: justify;
+
+    }
+
+main > article > h1{
+    font-family: 'Android'
+    color: #204268;
+    }
+
+main > h2{
+        background-image: -o-linear-gradient(to right #a6c3e4 #c5d3e2 white);
+        font-family: var(--fonte-android);
+        font-size: 20px;
+        font-weight: normal;
+        color: #204268;
+    }
+    aside {
+        background-color: lightblue;
+        border: 20px;
+        border-radius: 10px;
+        padding: 4px;
+        margin: 2px;
+        margin-top: 0px;
+    }
+    aside > h3{
+        background-color: #2682ED;
+        color: white;
+        margin: 0;
+        border-radius: 10px 10px 0px 0px;
+        padding: 0px;
+    }
+    footer{
+        background-color: #204268;
+        color: white;
+        margin: 0;
+        text-align: center;
+        padding: 4px;
+        text-size-adjust: 2px;
+        }
+    footer > a{
+        color: white;
+    }
